@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 40px;
+  margin: auto;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+.heading {
+  color: #1e293b;
+  font-size: 47px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+.description {
+  color: #475569;
+  font-size: 19px;
+  font-family: 'Roboto';
+}
+.name {
+  border: 1px solid #cbd2d9;
+  padding: 12px;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 400px;
+  color: #1e293b;
+  font-size: 19px;
+  font-family: 'Roboto';
+  margin-bottom: 10px;
+  outline: none;
+}
+.comment {
+  border: 1px solid #cbd2d9;
+  padding: 12px;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 400px;
+  color: #1e293b;
+  font-size: 19px;
+  font-family: 'Roboto';
+  outline: none;
+}
+.button {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 17px;
+  height: 39px;
+  width: 138px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
+.img {
+  order: -1;
+  width: 80%;
+  height: 80%;
+}
+@media all and (min-width: 700px) {
+  card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+  .form-container {
+    order: 0;
+    margin-right: 30px;
+  }
+}
+@media all and (min-width: 1102px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .img {
+    order: 1;
+    align-self: center;
+    width: 100%;
+    max-width: 370px;
+    height: 370px;
+    margin-right: 30px;
+  }
+  .form-container {
+    order: 0;
+  }
+}
+
+.line {
+  color: #dee0e3;
+  width: 100%;
+  background-color: #dee0e3;
+  height: 1px;
+}
+.total-comments {
+  display: flex;
+}
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #0284c7;
+  margin-right: 10px;
+}
+.comments {
+  color: #475569;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
